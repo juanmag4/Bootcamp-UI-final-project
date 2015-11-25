@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+        <script src="node_modules/angular/angular.min.js" type="text/javascript"></script>
+        <script src="node_modules/angular-route/angular-route.js" type="text/javascript"></script>
+        <script src="controllers/main.js" type="text/javascript"></script>
+        <script src="controllers/home.js" type="text/javascript"></script>
+        <script src="controllers/section1.js" type="text/javascript"></script>
+        <script src="controllers/section2.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div>
+            Twitter App
+            <ul>
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/section1">Section 1</a></li>
+                <li><a href="#/section2">Section 2</a></li>
+            </ul>
+        </div>
+        <div ng-view>
+            
+        </div>
+    </body>
+</html>
